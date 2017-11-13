@@ -1,0 +1,34 @@
+import math
+"""
+3	i'm mostly looking for help with finding the recurrance relation
+4	for the divide and conquer strategy for findind the majority element
+5	of an array as a function of n where n is len(a[F:L])
+6
+7	i 'm mostly having issues finding the runtime of the recursive call
+8	on x = maj(A,f,m)
+9
+10	the incrementing doesn't fit any pattern i know of
+11
+12	ie n = 5,6,7,8,9 all recurse 4 times before
+13
+14	"""
+def maj(A,f,l):
+   if f ==l:
+      return A[f]
+   m = math.floor((f+l)/2)
+   x = maj(A,f,m)
+   print(x)
+   c = 0
+   i = f
+   while i<= l:
+       if A[i] == x:
+          c = c+1
+       i = i + 1
+   if c >(l-f+1)/2:
+      return x
+   print("m+1 = " + str(m+1))
+   print("nice" + str(maj(A,m+1,l)))
+   return maj(A,m+1,l)
+
+a = [1,2,2,2,2,3]
+maj(a,0,len(a)-1)
