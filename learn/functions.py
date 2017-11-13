@@ -25,3 +25,17 @@ print('she shouted "Hello!" very loudly')
 # print(double_result)
 # print("Your double result is " + str(double_result))
 
+def sayhello():
+    print("Hello, Bryant")
+    print("Let's play with some simple math functions...")
+
+sayhello()
+
+def sum(v1,v2,v3):
+    print("Entered the sum function:")
+    my_sum = v1 + v2 + v3
+    print(my_sum)
+    return my_sum
+
+result = sum(1,1,1) + 10
+print(result)
