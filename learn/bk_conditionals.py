@@ -2,24 +2,24 @@
 Demonstration of else and elif.
 """
 
-def greet(friend, money):
+def greet(friend, bling):
     """
     Greet people.  Say hi if they are your friend.  Give them
     $20 if they are your friend and you have enough money.  Steal
     $10 from them if they are not your friend.
     """
-    if friend and (money > 20):
+    if friend and (bling > 20):
         print("Hi!")
-        money = money - 20
+        bling = bling - 20
     elif friend:
         print("Hello")
     else:
         print("Ha ha!")
-        money = money + 10
-    return money
+        bling = bling + 10
+    return bling
 
 
-money = 15
+money = 20
 
 money = greet(True, money)
 print("Money:", money)
@@ -33,7 +33,7 @@ money = greet(True, money)
 print("Money:", money)
 print()
 
-
+print("My hunger function result is: ")
 
 def am_i_hungry(hunger, cash):
     """
@@ -53,5 +53,5 @@ def am_i_hungry(hunger, cash):
         print("I'm full.")
 
 TUMMY = True
-MOOLA=10
+MOOLA = 10
 am_i_hungry(TUMMY, MOOLA)
