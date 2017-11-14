@@ -35,16 +35,23 @@ print()
 
 
 
-def am_i_hungry(hungry, money):
-    if hungry and money >= 10:
+def am_i_hungry(hunger, cash):
+    """
+    Takes two input strings for hunger and amount of money and returns a status string
+    depending on the values and boolean evaluation of those two inputs
+
+    :param hunger:
+    :param cash:
+    :return:
+    """
+    if hunger and cash >= 10:
         print("Have a snack!")
 
-    elif hungry and money < 10:
+    elif hunger and cash < 10:
         print("Get some money from the ATM!")
     else:
         print("I'm full.")
 
-tummy = True
-money=10
-am_i_hungry(tummy, money)
-
+TUMMY = True
+MOOLA=10
+am_i_hungry(TUMMY, MOOLA)
