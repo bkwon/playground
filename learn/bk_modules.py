@@ -6,7 +6,7 @@ Demonstration of importing modules.
 import math
 
 # Import example module
-import examples3_module as example
+# import examples3_module as example
 
 # Constants
 print("Math constants")
@@ -27,9 +27,9 @@ print("")
 print("Dir")
 print("===")
 print(dir(math))
-print(dir(example))
+#print(dir(example))
 print("")
 
-print(example.message)
+#print(example.message)
 print(math.__name__)
-print(example.__name__)
+#print(example.__name__)
